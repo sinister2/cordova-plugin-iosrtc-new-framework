@@ -1,4 +1,5 @@
 import Foundation
+import WebRTC
 
 class PluginRTCRtpReceiver : NSObject {
 	var rtpReceiver: RTCRtpReceiver

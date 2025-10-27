@@ -1,6 +1,7 @@
 import Foundation
 import AVFoundation
 import UIKit.UIDevice
+import WebRTC
 
 class PluginGetUserMedia {
 

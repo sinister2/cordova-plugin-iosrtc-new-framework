@@ -1,4 +1,5 @@
 import Foundation
+import WebRTC
 
 class PluginRTCRtpEncodingParameters : NSObject {
 	var rtcRtpEncodingParameters: RTCRtpEncodingParameters
