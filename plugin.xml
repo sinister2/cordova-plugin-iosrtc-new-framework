@@ -20,7 +20,8 @@
 
 	<platform name="ios">
 
-		<hook type="after_prepare" src="extra/hooks/iosrtc-swift-support.js" />
+		<!-- No hook -->
+		<!-- <hook type="after_prepare" src="extra/hooks/iosrtc-swift-support.js" /> -->
 
 		<config-file target="config.xml" parent="/*">
 			<feature name="iosrtcPlugin">
@@ -60,7 +61,7 @@
 		</js-module>
 
 		<!-- Bridging header for using ObjetiveC libraries in Swift -->
-		<header-file src="src/cordova-plugin-iosrtc-Bridging-Header.h" />
+		<!-- <header-file src="src/cordova-plugin-iosrtc-Bridging-Header.h" /> -->
 
 		<!-- Project source files -->
 		<source-file src="src/iosrtcPlugin.swift" />
@@ -104,7 +105,14 @@
 		<framework src="VideoToolbox.framework" />
 
 		<!-- WebRTC library -->
-		<framework src="lib/WebRTC.xcframework" custom="true" embed="true" />
+		<!-- <framework src="lib/WebRTC.xcframework" custom="true" embed="true" /> -->
+
+		<podspec>
+			<config><source url="https://cdn.cocoapods.org/"/></config>
+			<pods use-frameworks="true">
+				<pod name="WebRTC-SDK" />
+			</pods>
+		</podspec>
 	</platform>
 
 </plugin>
