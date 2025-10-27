@@ -1,4 +1,5 @@
 import Foundation
+import WebRTC
 
 class PluginRTCRtpCodecParameters : NSObject {
 	var rtcRtpCodecParameters: RTCRtpCodecParameters

@@ -1,4 +1,5 @@
 import Foundation
+import WebRTC
 
 class PluginRTCRtpTransceiver : NSObject {
     // NOTE: ID used to reference this native transceiver from JS.
